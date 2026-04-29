@@ -25,7 +25,10 @@ function Home({  signOut, user }: any) {
 
   return (
     <Box sx={{width:"80%",margin:'auto'}}>
-      
+      welcome {user.username} <br />
+      <Button variant="contained" onClick={goToAddRoomPage}>Go to add room page</Button>
+      <br />
+      <Button variant="outlined" onClick={signOut}>Sign out</Button>
     </Box>         
   );
 }
